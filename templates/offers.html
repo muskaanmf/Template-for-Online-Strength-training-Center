@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+  rel="stylesheet" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+<link rel="stylesheet" href="{%static 'offers.css' %}">
+{% endblock head %}
+{% block body %}
+<div class="offers">
+  <div class="head">
+    <h1 class="text-center">Offers</h1>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="/static/img/bg.jpg" class="card-img-top" alt="place-1">
+          <div class="card-body">
+            <h5 class="card-title">Exercise-1</h5>
+            <h6>Price-</h6>
+            <p class="card-text">Description</p>
+            <a href="\purchase" class="btn btn-outline-secondary btn-sm">Order Now</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/img/5.jpg." class="card-img-top" alt="place-2">
+          <div class="card-body">
+            <h5 class="card-title">Exercise-2</h5>
+            <h6>Price-</h6>
+            <p class="card-text">Description</p>
+            <a href="\purchase" class="btn btn-outline-secondary btn-sm">Order Now</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/img/1.jpg" class="card-img-top" alt="place-3">
+          <div class="card-body">
+            <h5 class="card-title">Exercise-3</h5>
+            <h6>Price-</h6>
+            <p class="card-text">Description</p>
+            <a href="\purchase" class="btn btn-outline-secondary btn-sm">Order Now</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/static/img/7.jpg" class="card-img-top" alt="place-1">
+          <div class="card-body">
+            <h5 class="card-title">Exercise-4</h5>
+            <h6>Price-</h6>
+            <p class="card-text">Description</p>
+            <a href="\purchase" class="btn btn-outline-secondary btn-sm">Order Now</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/img/2.jpg." class="card-img-top" alt="place-2">
+          <div class="card-body">
+            <h5 class="card-title">Exercise-5</h5>
+            <h6>Price-</h6>
+            <p class="card-text">Description</p>
+            <a href="\purchase" class="btn btn-outline-secondary btn-sm">Order Now</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/static/img/bg.jpg" class="card-img-top" alt="place-3">
+          <div class="card-body">
+            <h5 class="card-title">Exercise-6</h5>
+            <h6>Price-</h6>
+            <p class="card-text">Description</p>
+            <a href="\purchase" class="btn btn-outline-secondary btn-sm">Order Now</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

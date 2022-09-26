@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+footer .container {
+  max-width: 100%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-content ul {
+  list-style: none;
+}
+
+.footer {
+  display: block;
+  min-height: 50%;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  background-color: rgb(26, 27, 27);
+  padding: 2rem;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+  font-weight: 500;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(252, 81, 8);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-content ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-content ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-content ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+.footer-col .social-link a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  border-radius: 50px;
+  line-height: 40px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer-col .social-link a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.logo{
+  height: 60px;
+  width: 90px;
+}
+.navbar{
+  background-color: #AAC4FF;
+  margin:0%;
+  padding: 0%;
+}
+.nav-item a{
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+.navbar-brand{
+  font-weight: bold;
+  color: #11118a;
+  font-family: cursive;
+}
+

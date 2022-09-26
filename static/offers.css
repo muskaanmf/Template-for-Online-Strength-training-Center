@@ -1,0 +1,26 @@
+.offers {
+    background-color: #EEF1FF;
+}
+
+div .card {
+    border: 5px solid;
+    border-color: rgb(245, 245, 241);
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+.head {
+    background-color: rgb(251, 251, 245);
+    border: 2px solid rgb(247, 247, 243);
+    border-radius: 10px;
+    margin: 30px 0 30px 0;
+}
+
+.head h1 {
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}

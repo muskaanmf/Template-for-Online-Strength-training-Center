@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F9F9F9;
+}
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  left: 19px;
+}
+
+.display-3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container-m {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.u-color {
+  color: rgb(29 80 104);
+}
+
+@media only screen and (max-width:480px){
+.user-image img {
+  max-width: 30%;
+  height: auto;
+  border: 3px solid rgb(29 80 104);
+  padding: 2px;
+}
+}
+h2 {
+  font-weight: bold;
+  text-align: start;
+  color: rgb(36, 50, 97);
+}
+#form {
+  display: flex;
+  justify-content: end;
+  margin: auto;
+  padding: 20px;
+}
+#form input {
+  font-size: 16px;
+  border: 0;
+  padding: 15px 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+#form button {
+  margin: 10px 9px;
+  background-color: rgb(54 79 147);
+  color: white;
+  padding: 4px 14px;
+  border: 2px solid rgb(56 117 146);
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#form button :hover {
+  background: rgb(49, 152, 199)
+}
+
+#form label {
+  font-size: 20px;
+  margin: 15px 5px;
+}
+
+#reviews div {
+  display: flexbox;
+  justify-content: center;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+#gallery div .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .12);
+}
+
+div .card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+  transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.container {
+  margin-bottom: 40px;
+}

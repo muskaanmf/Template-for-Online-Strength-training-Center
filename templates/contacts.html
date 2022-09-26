@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+  rel="stylesheet" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+<link rel="stylesheet" href="{%static 'contacts.css' %}">
+{% endblock head %}
+{% block body %}
+<div class="contact-section">
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <div class="contact-details">
+    <h2>Contact Details</h2>
+    <p><i class="fa-solid fa-phone"></i>+91 1234567890</p>
+    <div class="divider"></div>
+    <p><i class="fa-solid fa-envelope"></i>www.strengthandconditioning.com</p>
+    <div class="divider"></div>
+    <b>Our former address:</b>
+    <p><br><i class="fa-solid fa-location-dot"></i> #1, 1st Floor 3rd Stage <br>Opp Empire Restaurant, Bangalore, India
+    </p>
+  </div>
+
+  <form class="contact-form" action="/contacts" method="POST">
+    {% csrf_token %}
+    <label for="name">Your Name*</label>
+    <input type="text" name="name" class="contact-form-text" placeholder="Your name" required>
+
+    <label for="email">Your Email*</label>
+    <input type="email" name="email" class="contact-form-text" placeholder="Your email" required>
+
+    <label for="phone">Your Phone*</label>
+    <input type="phone" name="phone" class="contact-form-text" placeholder="Your phone" required>
+
+    <label for="desc">Write Your Message*</label>
+    <textarea class="contact-form-text" id="desc" name="desc" placeholder="Your message" required></textarea>
+
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+
+{% endblock body %}
